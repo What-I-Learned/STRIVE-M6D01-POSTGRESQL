@@ -66,3 +66,8 @@ SELECT category,published_at FROM public.books;
 
 SELECT COUNT(*) FROM public.books;
 SELECT NAME,birth_year, 2021-birth_year AS age FROM authors ORDER BY age ASC; 
+
+-- DELETE
+DELETE FROM public.authors WHERE lower(country)='united states'
+DELETE FROM public.books WHERE lower(category)='united states'
+DELETE FROM public.authors WHERE lower(last_name)='a%'
