@@ -54,6 +54,12 @@ INSERT INTO books(name,category,cover,author)VALUES('A Dangerous Fortune','Novel
 
 
 -- Write an update query to update  authors birth year
+UPDATE pubic.authors SET birth_year = 1989 WHERE uthor_id = 1
+
+UPDATE public.books
+SET cover = 'http' 
+WHERE book_id = 1;
+
 
 -- SELECT * FROM public.blogs;
 SELECT category FROM public.books;
